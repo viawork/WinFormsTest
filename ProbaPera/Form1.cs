@@ -18,8 +18,10 @@ namespace ProbaPera
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*
             File.Delete(@"c:\users\via\desctop\1.bmp");
             File.Delete(@"c:\users\via\desctop\2.bmp");
+            */
             //button1.Text += "А";
         }
 
@@ -36,6 +38,11 @@ namespace ProbaPera
         private void примерToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("выбрали меня");
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

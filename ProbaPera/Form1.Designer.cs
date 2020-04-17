@@ -38,19 +38,19 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.пункт1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.пункт2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.примерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.списко2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.списко3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.item1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ner2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.примерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.списко3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -58,7 +58,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(458, 87);
+            this.button1.Location = new System.Drawing.Point(547, 15);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 23);
             this.button1.TabIndex = 0;
@@ -100,7 +100,7 @@
             // 
             // domainUpDown1
             // 
-            this.domainUpDown1.Location = new System.Drawing.Point(134, 250);
+            this.domainUpDown1.Location = new System.Drawing.Point(762, 44);
             this.domainUpDown1.Name = "domainUpDown1";
             this.domainUpDown1.Size = new System.Drawing.Size(120, 20);
             this.domainUpDown1.TabIndex = 4;
@@ -113,7 +113,7 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(458, 116);
+            this.listBox1.Location = new System.Drawing.Point(547, 44);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 5;
@@ -130,29 +130,6 @@
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(376, 250);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(231, 23);
-            this.progressBar1.TabIndex = 7;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Location = new System.Drawing.Point(0, 24);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(10, 326);
-            this.splitter1.TabIndex = 8;
-            this.splitter1.TabStop = false;
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(703, 31);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(250, 250);
-            this.webBrowser1.TabIndex = 9;
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -167,14 +144,28 @@
             // пункт1ToolStripMenuItem
             // 
             this.пункт1ToolStripMenuItem.Name = "пункт1ToolStripMenuItem";
-            this.пункт1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.пункт1ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.пункт1ToolStripMenuItem.Text = "Пункт 1";
             // 
             // пункт2ToolStripMenuItem
             // 
             this.пункт2ToolStripMenuItem.Name = "пункт2ToolStripMenuItem";
-            this.пункт2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.пункт2ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.пункт2ToolStripMenuItem.Text = "пункт2";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(117, 22);
+            this.toolStripMenuItem3.Text = "/";
+            // 
+            // примерToolStripMenuItem
+            // 
+            this.примерToolStripMenuItem.Name = "примерToolStripMenuItem";
+            this.примерToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.примерToolStripMenuItem.Text = "пример";
+            this.примерToolStripMenuItem.Click += new System.EventHandler(this.примерToolStripMenuItem_Click);
             // 
             // списко2ToolStripMenuItem
             // 
@@ -184,52 +175,64 @@
             this.списко2ToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.списко2ToolStripMenuItem.Text = "списко2";
             // 
-            // списко3ToolStripMenuItem
-            // 
-            this.списко3ToolStripMenuItem.Name = "списко3ToolStripMenuItem";
-            this.списко3ToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
-            this.списко3ToolStripMenuItem.Text = "списко3";
-            // 
             // item1ToolStripMenuItem
             // 
             this.item1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nerToolStripMenuItem,
             this.ner2ToolStripMenuItem});
             this.item1ToolStripMenuItem.Name = "item1ToolStripMenuItem";
-            this.item1ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.item1ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
             this.item1ToolStripMenuItem.Text = "Item1";
             // 
             // nerToolStripMenuItem
             // 
             this.nerToolStripMenuItem.Name = "nerToolStripMenuItem";
-            this.nerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nerToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.nerToolStripMenuItem.Text = "ner";
             // 
             // ner2ToolStripMenuItem
             // 
             this.ner2ToolStripMenuItem.Name = "ner2ToolStripMenuItem";
-            this.ner2ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ner2ToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
             this.ner2ToolStripMenuItem.Text = "ner2";
             // 
-            // toolStripMenuItem3
+            // списко3ToolStripMenuItem
             // 
-            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem3.Text = "/";
+            this.списко3ToolStripMenuItem.Name = "списко3ToolStripMenuItem";
+            this.списко3ToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.списко3ToolStripMenuItem.Text = "списко3";
             // 
-            // примерToolStripMenuItem
+            // progressBar1
             // 
-            this.примерToolStripMenuItem.Name = "примерToolStripMenuItem";
-            this.примерToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.примерToolStripMenuItem.Text = "пример";
-            this.примерToolStripMenuItem.Click += new System.EventHandler(this.примерToolStripMenuItem_Click);
+            this.progressBar1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.progressBar1.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.progressBar1.Location = new System.Drawing.Point(314, 142);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(70, 288);
+            this.progressBar1.TabIndex = 7;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // splitter1
+            // 
+            this.splitter1.Location = new System.Drawing.Point(0, 24);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(10, 418);
+            this.splitter1.TabIndex = 8;
+            this.splitter1.TabStop = false;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Location = new System.Drawing.Point(25, 130);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(250, 250);
+            this.webBrowser1.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 350);
+            this.ClientSize = new System.Drawing.Size(1001, 442);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.progressBar1);
