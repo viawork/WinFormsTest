@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2d25a6d1-43f6-4eda-a271-9a5bbda57de1" name="UMLClassDiagram1" linkedPackageId="84e79824-6ccf-441d-baaf-82802322bfcd" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="f31c10a0-2a43-4491-8496-c7037ffad381">
+      <elementDefinition Id="c1c88c9f-10d5-4cb5-9748-0974354a852b" />
+      <body>пояснение к операции
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="384c58dd-45f5-42a0-834c-836eb32fe67a">
+      <profileInstance Id="5d73dc9f-25ab-42f6-ae3a-525fc84342c0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="11a4045a-3474-4ace-9a0c-790a109e27dc">
+      <profileInstance Id="3631c663-616e-4cc7-9de5-b29dfb525144" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02cd9888-7c18-4e6b-baba-cbaf82c62f13" name="Class1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a3acad09-21c8-4216-b71e-f2e183fd7a59" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f20f3553-4ac2-4bc1-a42f-a199469781f7" name="Interface1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f129d357-1ccf-44c0-abca-d6f30c681b0a" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="43450b1d-f46f-4024-ae95-9a3f05114b31" name="Enumeration1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c1c51192-7312-4e23-87b4-c594edc8d3e1" />
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="28b2aa05-7d06-487b-b530-0a652a7ad068" name="Package1">
+        <elementDefinition Id="44404d22-293f-4fe7-81ee-b18181d57d45" />
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="84e79824-6ccf-441d-baaf-82802322bfcd" name="UML схема приложения">
+    <elementDefinition Id="359f7142-c5d4-4fa2-af1e-98c72cbe1d4c" />
+  </package>
+</logicalClassDesignerModel>
