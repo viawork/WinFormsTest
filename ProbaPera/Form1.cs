@@ -23,6 +23,17 @@ namespace ProbaPera
             File.Delete(@"c:\users\via\desctop\2.bmp");
             */
             //button1.Text += "А";
+           // var coord = new System.Drawing.Point(50, 20);
+            System.Drawing.Point Coord = button2.Location;
+            Coord.X +=  100;
+            button2.Location = Coord;
+            if (Coord.X > Size.Width)
+            {
+                MessageBox.Show("Але, гараж, куда поехал ");
+                Coord.X = 10;
+                button2.Location = Coord;
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -40,8 +51,13 @@ namespace ProbaPera
             MessageBox.Show("выбрали меня");
         }
 
-        private void progressBar1_Click(object sender, EventArgs e)
+        
+
+        private void button2_Click(object sender, EventArgs e)
         {
+            button1.Location = new System.Drawing.Point(450, 50);
+            
+            button1.Size = new System.Drawing.Size(50, 20);
 
         }
     }
