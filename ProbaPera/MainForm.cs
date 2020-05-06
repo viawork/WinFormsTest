@@ -19,19 +19,28 @@ namespace ProbaPera
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*
-            File.Delete(@"c:\users\via\desctop\1.bmp");
-            */
+            
            // var coord = new System.Drawing.Point(50, 20);
-            System.Drawing.Point Coord = button2.Location;
-            Coord.X +=  100;
-            button2.Location = Coord;
-            if (Coord.X > Size.Width)
+            System.Drawing.Point coord = button2.Location;
+            coord.X +=  100;
+            button2.Location = coord;
+            if (coord.X > Size.Width)
             {
-                MessageBox.Show($@"Але, гараж, ширина уже - {Size.Width} 
-                                    куда поехал ?");
-                Coord.X = 10;
-                button2.Location = Coord;
+                //MessageBoxButtons buttons = new MessageBoxButtons();
+                if (MessageBox.Show($@"Але, гараж, ширина уже - {Size.Width}\n 
+                                    Продолжить ?", "Вопрос", MessageBoxButtons.YesNo,
+                                    MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    coord.X = Size.Width- button2.Size.Width;
+                    button2.Location = coord;
+                }
+                else
+                {
+                    MessageBox.Show("Кнопка за пределами формы!", "Предупреждение",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    coord.X = 0;
+                    button2.Location = coord;
+                }
+                
             }
 
         }
@@ -63,15 +72,27 @@ namespace ProbaPera
         private void примерToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("выбрали меня");
-
         }
 
-        
+
 
         private void button2_Click(object sender, EventArgs e)
         {
+            /*
             button1.Location = new System.Drawing.Point(450, 50);
             button1.Size = new System.Drawing.Size(50, 20);
+            */
+            string fileName = @"C:\Users\VIA\Desktop\Новый точечный рисунок.bmp";
+            if (File.Exists(fileName))
+            {
+                labelResult.Text = $"Файл {fileName} существует";
+                File.Delete(fileName);
+            }
+            else
+            {
+                labelResult.Text = $"Файл {fileName} был удален !";
+            }
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -92,7 +113,7 @@ namespace ProbaPera
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonCalculate_Click(object sender, EventArgs e)
         {
             textBox3.Text = textBox1.Text + textBox2.Text;
         }
