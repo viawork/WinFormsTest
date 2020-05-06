@@ -60,7 +60,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(547, 15);
+            this.button1.Location = new System.Drawing.Point(534, 1);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 23);
             this.button1.TabIndex = 0;
@@ -91,7 +91,7 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(547, 44);
+            this.listBox1.Location = new System.Drawing.Point(534, 27);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(120, 95);
             this.listBox1.TabIndex = 5;
@@ -264,7 +264,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 232);
+            this.ClientSize = new System.Drawing.Size(1001, 187);
             this.Controls.Add(this.labelResult);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.buttonCulculate);

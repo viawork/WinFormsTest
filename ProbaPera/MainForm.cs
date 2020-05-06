@@ -12,10 +12,6 @@ namespace ProbaPera
                         InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-           // MessageBox("ткнул сюда");
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -26,7 +22,6 @@ namespace ProbaPera
             button2.Location = coord;
             if (coord.X > Size.Width)
             {
-                //MessageBoxButtons buttons = new MessageBoxButtons();
                 if (MessageBox.Show($@"Але, гараж, ширина уже - {Size.Width}\n 
                                     Продолжить ?", "Вопрос", MessageBoxButtons.YesNo,
                                     MessageBoxIcon.Question) == DialogResult.Yes)
@@ -47,20 +42,11 @@ namespace ProbaPera
 
         private void Form1_Load(object sender, EventArgs e)
         {
-/*            
-            double num = 123.456;
-            var simpleVar = "переменная строкового типа";
-            button3.Text =""+num;
-            label1.Text = simpleVar;
-            button1.Text += "А";
-            Text = formHeader;
-            */
             {
                 int age = 33;
                 string textAge = Convert.ToString(age);
-
+                Text = formHeader +$" шириной {Width} pxl";
             }
-
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -73,8 +59,6 @@ namespace ProbaPera
         {
             MessageBox.Show("выбрали меня");
         }
-
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -92,20 +76,14 @@ namespace ProbaPera
             {
                 labelResult.Text = $"Файл {fileName} был удален !";
             }
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-            //MessageBox.Show($"Ширина формы - {Size.Width}     ");
             MessageBox.Show($@"Ширина формы - {Size.Width}
 Высота формы - {Size.Height}     ");
-
             // тоже самое через \n
             MessageBox.Show($"Ширина формы - {Size.Width} \nВысота формы - {Size.Height}");
-
-
         }
 
         private void toolTip1_Popup(object sender, PopupEventArgs e)
